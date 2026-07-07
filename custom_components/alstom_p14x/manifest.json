@@ -5,8 +5,8 @@
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/LucMathlin/ha-alstom-p14x",
-  "issue_tracker": "https://github.com/LucMathlin/ha-alstom-p14x/issues",
   "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/LucMathlin/ha-alstom-p14x/issues",
   "requirements": ["pymodbus>=3.6.0"],
   "version": "0.1.0"
 }
