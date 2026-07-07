@@ -1,0 +1,12 @@
+{
+  "domain": "alstom_p14x",
+  "name": "Alstom P14x Protection Relay",
+  "codeowners": ["@LucMathlin"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/LucMathlin/ha-alstom-p14x",
+  "issue_tracker": "https://github.com/LucMathlin/ha-alstom-p14x/issues",
+  "iot_class": "local_polling",
+  "requirements": ["pymodbus>=3.6.0"],
+  "version": "0.1.0"
+}

@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Alstom P14x Protection Relay",
+        "description": "Configure connection to your P14x series protection relay via Modbus TCP.",
+        "data": {
+          "host": "Host / IP Address",
+          "port": "Port",
+          "slave_id": "Modbus Slave ID",
+          "password": "Relay Password (optional)",
+          "scan_interval_fast": "Status scan interval (seconds)",
+          "scan_interval_medium": "Measurement scan interval (seconds)",
+          "scan_interval_slow": "Energy scan interval (seconds)",
+          "enable_cb_status": "Enable CB status monitoring",
+          "enable_cb_control": "Enable CB control (Trip/Close buttons)"
+        },
+        "data_description": {
+          "host": "IP address of the Modbus TCP gateway or RTU-to-TCP converter",
+          "slave_id": "Modbus unit address of the relay (1-247)",
+          "password": "Relay password for write access (CB control). Leave blank if not required.",
+          "scan_interval_fast": "Polling rate for CB status, alarms, and digital I/O (default: 1s)",
+          "scan_interval_medium": "Polling rate for currents, voltages, power (default: 15s)",
+          "scan_interval_slow": "Polling rate for energy counters and fault records (default: 60s)",
+          "enable_cb_status": "Monitor circuit breaker open/closed position",
+          "enable_cb_control": "Enable remote trip and close buttons (requires CB status enabled)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to the Modbus TCP host",
+      "cannot_communicate": "Connected but unable to communicate with the relay. Check slave ID.",
+      "cb_control_requires_status": "CB control requires CB status monitoring to be enabled"
+    },
+    "abort": {
+      "already_configured": "This relay is already configured"
+    }
+  }
+}
