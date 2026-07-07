@@ -3,6 +3,8 @@
 [![Validate](https://github.com/LucMathlin/ha-alstom-p14x/actions/workflows/validate.yml/badge.svg)](https://github.com/LucMathlin/ha-alstom-p14x/actions/workflows/validate.yml)
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
+[![Add to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=LucMathlin&repository=ha-alstom-p14x&category=integration)
+
 A Home Assistant custom integration for Alstom/GE P14x series protection relays (P141, P142, P143, P145) via Modbus TCP.
 
 ## Supported Devices
